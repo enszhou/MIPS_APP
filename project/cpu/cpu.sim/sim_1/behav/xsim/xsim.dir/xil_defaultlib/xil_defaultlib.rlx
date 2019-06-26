@@ -1,0 +1,14 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sim_1/new/CPU_MEM_tb.v,1559120427,verilog,,,,CPU_MEM_tb,,,../../../../cpu.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/ALU.v,1557477240,verilog,,D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/ALUControlUnit.v,,ALU,,,../../../../cpu.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/Reg_File.v,1557499365,verilog,,D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sim_1/new/CPU_MEM_tb.v,,Reg_File,,,../../../../cpu.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v,1559296492,verilog,,D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/ALU.v,,dist_mem_gen_0,,,../../../../cpu.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/ALUControlUnit.v,1557647541,verilog,,D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/CPU.v,,ALUControlUnit,,,../../../../cpu.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/CPU.v,1559119825,verilog,,D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/CPU_MEM.v,,CPU,,,../../../../cpu.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/CPU_MEM.v,1559116416,verilog,,D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/ControlUnit.v,,CPU_MEM,,,../../../../cpu.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/ControlUnit.v,1559104282,verilog,,D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/MEM.v,,ControlUnit,,,../../../../cpu.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/MEM.v,1559045489,verilog,,D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/Reg_File.v,,MEM,,,../../../../cpu.srcs/sources_1/ip/clk_wiz_0,,,,,

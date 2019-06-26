@@ -1,0 +1,779 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri May 31 17:56:34 2019
+# Process ID: 12416
+# Current directory: D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.runs/synth_1
+# Command line: vivado.exe -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
+# Log file: D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.runs/synth_1/Top.vds
+# Journal file: D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Top.tcl -notrace
+Command: synth_design -top Top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 960 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 394.371 ; gain = 100.625
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top' [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/Top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.runs/synth_1/.Xil/Vivado-12416-ENSZHOU/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.runs/synth_1/.Xil/Vivado-12416-ENSZHOU/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'CLK' [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/Module/CLK.v:6]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'CLK' (2#1) [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/Module/CLK.v:6]
+INFO: [Synth 8-6157] synthesizing module 'CLK__parameterized0' [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/Module/CLK.v:6]
+	Parameter N bound to: 2000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'CLK__parameterized0' (2#1) [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/Module/CLK.v:6]
+INFO: [Synth 8-6157] synthesizing module 'CLK__parameterized1' [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/Module/CLK.v:6]
+	Parameter N bound to: 125 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'CLK__parameterized1' (2#1) [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/Module/CLK.v:6]
+INFO: [Synth 8-6157] synthesizing module 'DDU' [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/DDU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SEG' [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/Module/SEG.v:1]
+INFO: [Synth 8-6157] synthesizing module 'bcd_to_seg' [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/Module/SEG.v:111]
+INFO: [Synth 8-226] default block is never used [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/Module/SEG.v:116]
+INFO: [Synth 8-6155] done synthesizing module 'bcd_to_seg' (3#1) [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/Module/SEG.v:111]
+INFO: [Synth 8-226] default block is never used [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/Module/SEG.v:36]
+INFO: [Synth 8-226] default block is never used [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/Module/SEG.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'SEG' (4#1) [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/Module/SEG.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MUL_SIN' [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/MUL_SIN.v:23]
+WARNING: [Synth 8-5788] Register q_reg in module MUL_SIN is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/MUL_SIN.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'MUL_SIN' (5#1) [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/MUL_SIN.v:23]
+WARNING: [Synth 8-567] referenced signal 'io_data' should be on the sensitivity list [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/DDU.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'DDU' (6#1) [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/DDU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CPU_MEM' [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/CPU_MEM.v:5]
+INFO: [Synth 8-6157] synthesizing module 'MEM' [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/MEM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_0' [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.runs/synth_1/.Xil/Vivado-12416-ENSZHOU/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_0' (7#1) [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.runs/synth_1/.Xil/Vivado-12416-ENSZHOU/realtime/dist_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (30) of port connection 'a' does not match port width (10) of module 'dist_mem_gen_0' [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/MEM.v:38]
+WARNING: [Synth 8-689] width (30) of port connection 'dpra' does not match port width (10) of module 'dist_mem_gen_0' [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/MEM.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'MEM' (8#1) [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/MEM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CPU' [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/CPU.v:23]
+	Parameter INTTable bound to: 64 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Reg_File' [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/Reg_File.v:23]
+WARNING: [Synth 8-6014] Unused sequential element addr_reg was removed.  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/Reg_File.v:49]
+WARNING: [Synth 8-5788] Register R_reg[31] in module Reg_File is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/Reg_File.v:40]
+WARNING: [Synth 8-5788] Register R_reg[30] in module Reg_File is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/Reg_File.v:40]
+WARNING: [Synth 8-5788] Register R_reg[29] in module Reg_File is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/Reg_File.v:40]
+WARNING: [Synth 8-5788] Register R_reg[28] in module Reg_File is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/Reg_File.v:40]
+WARNING: [Synth 8-5788] Register R_reg[27] in module Reg_File is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/Reg_File.v:40]
+WARNING: [Synth 8-5788] Register R_reg[26] in module Reg_File is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/Reg_File.v:40]
+WARNING: [Synth 8-5788] Register R_reg[25] in module Reg_File is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/Reg_File.v:40]
+WARNING: [Synth 8-5788] Register R_reg[24] in module Reg_File is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/Reg_File.v:40]
+WARNING: [Synth 8-5788] Register R_reg[23] in module Reg_File is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/Reg_File.v:40]
+WARNING: [Synth 8-5788] Register R_reg[22] in module Reg_File is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/Reg_File.v:40]
+WARNING: [Synth 8-5788] Register R_reg[21] in module Reg_File is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/Reg_File.v:40]
+WARNING: [Synth 8-5788] Register R_reg[20] in module Reg_File is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/Reg_File.v:40]
+WARNING: [Synth 8-5788] Register R_reg[19] in module Reg_File is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/Reg_File.v:40]
+WARNING: [Synth 8-5788] Register R_reg[18] in module Reg_File is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/Reg_File.v:40]
+WARNING: [Synth 8-5788] Register R_reg[17] in module Reg_File is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/Reg_File.v:40]
+WARNING: [Synth 8-5788] Register R_reg[16] in module Reg_File is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/Reg_File.v:40]
+WARNING: [Synth 8-5788] Register R_reg[15] in module Reg_File is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/Reg_File.v:40]
+WARNING: [Synth 8-5788] Register R_reg[14] in module Reg_File is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/Reg_File.v:40]
+WARNING: [Synth 8-5788] Register R_reg[13] in module Reg_File is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/Reg_File.v:40]
+WARNING: [Synth 8-5788] Register R_reg[12] in module Reg_File is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/Reg_File.v:40]
+WARNING: [Synth 8-5788] Register R_reg[11] in module Reg_File is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/Reg_File.v:40]
+WARNING: [Synth 8-5788] Register R_reg[10] in module Reg_File is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/Reg_File.v:40]
+WARNING: [Synth 8-5788] Register R_reg[9] in module Reg_File is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/Reg_File.v:40]
+WARNING: [Synth 8-5788] Register R_reg[8] in module Reg_File is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/Reg_File.v:40]
+WARNING: [Synth 8-5788] Register R_reg[7] in module Reg_File is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/Reg_File.v:40]
+WARNING: [Synth 8-5788] Register R_reg[6] in module Reg_File is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/Reg_File.v:40]
+WARNING: [Synth 8-5788] Register R_reg[5] in module Reg_File is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/Reg_File.v:40]
+WARNING: [Synth 8-5788] Register R_reg[4] in module Reg_File is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/Reg_File.v:40]
+WARNING: [Synth 8-5788] Register R_reg[3] in module Reg_File is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/Reg_File.v:40]
+WARNING: [Synth 8-5788] Register R_reg[2] in module Reg_File is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/Reg_File.v:40]
+WARNING: [Synth 8-5788] Register R_reg[1] in module Reg_File is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/Reg_File.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'Reg_File' (9#1) [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/Reg_File.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALUControlUnit' [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/ALUControlUnit.v:23]
+	Parameter ADD bound to: 6'b100000 
+	Parameter SUB bound to: 6'b100010 
+	Parameter SLT bound to: 6'b101010 
+INFO: [Synth 8-226] default block is never used [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/ALUControlUnit.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'ALUControlUnit' (10#1) [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/ALUControlUnit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/ALU.v:23]
+	Parameter ADD bound to: 6'b100000 
+	Parameter SUB bound to: 6'b100010 
+	Parameter AND bound to: 6'b100100 
+	Parameter OR bound to: 6'b100101 
+	Parameter NOR bound to: 6'b100111 
+	Parameter XOR bound to: 6'b100110 
+	Parameter SLT bound to: 6'b101010 
+	Parameter SRLV bound to: 6'b000110 
+	Parameter SLLV bound to: 6'b000100 
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (11#1) [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/imports/new/ALU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ControlUnit' [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/ControlUnit.v:23]
+	Parameter CONT bound to: 5'b00000 
+	Parameter STEP bound to: 5'b01111 
+	Parameter INT bound to: 5'b01101 
+INFO: [Synth 8-226] default block is never used [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/ControlUnit.v:67]
+INFO: [Synth 8-226] default block is never used [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/ControlUnit.v:126]
+WARNING: [Synth 8-5788] Register state_reg in module ControlUnit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/ControlUnit.v:57]
+WARNING: [Synth 8-5788] Register IRWrite_reg in module ControlUnit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/ControlUnit.v:113]
+WARNING: [Synth 8-5788] Register PCWrite_reg in module ControlUnit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/ControlUnit.v:116]
+WARNING: [Synth 8-5788] Register RegDst_reg in module ControlUnit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/ControlUnit.v:187]
+WARNING: [Synth 8-5788] Register MemtoReg_reg in module ControlUnit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/ControlUnit.v:188]
+WARNING: [Synth 8-5788] Register INTPCSource_reg in module ControlUnit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/ControlUnit.v:311]
+INFO: [Synth 8-6155] done synthesizing module 'ControlUnit' (12#1) [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/ControlUnit.v:23]
+INFO: [Synth 8-226] default block is never used [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/CPU.v:141]
+INFO: [Synth 8-226] default block is never used [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/CPU.v:153]
+INFO: [Synth 8-6155] done synthesizing module 'CPU' (13#1) [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/CPU.v:23]
+WARNING: [Synth 8-5788] Register buffer_RX_reg in module CPU_MEM is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/CPU_MEM.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'CPU_MEM' (14#1) [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/CPU_MEM.v:5]
+INFO: [Synth 8-6157] synthesizing module 'HC_42' [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/HC_42.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'HC_42' (15#1) [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/HC_42.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Top' (16#1) [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/Top.v:23]
+WARNING: [Synth 8-3331] design MEM has unconnected port rst
+WARNING: [Synth 8-3331] design MEM has unconnected port a_cpu[31]
+WARNING: [Synth 8-3331] design MEM has unconnected port a_cpu[30]
+WARNING: [Synth 8-3331] design MEM has unconnected port a_cpu[29]
+WARNING: [Synth 8-3331] design MEM has unconnected port a_cpu[28]
+WARNING: [Synth 8-3331] design MEM has unconnected port a_cpu[27]
+WARNING: [Synth 8-3331] design MEM has unconnected port a_cpu[26]
+WARNING: [Synth 8-3331] design MEM has unconnected port a_cpu[25]
+WARNING: [Synth 8-3331] design MEM has unconnected port a_cpu[24]
+WARNING: [Synth 8-3331] design MEM has unconnected port a_cpu[23]
+WARNING: [Synth 8-3331] design MEM has unconnected port a_cpu[22]
+WARNING: [Synth 8-3331] design MEM has unconnected port a_cpu[21]
+WARNING: [Synth 8-3331] design MEM has unconnected port a_cpu[20]
+WARNING: [Synth 8-3331] design MEM has unconnected port a_cpu[19]
+WARNING: [Synth 8-3331] design MEM has unconnected port a_cpu[18]
+WARNING: [Synth 8-3331] design MEM has unconnected port a_cpu[17]
+WARNING: [Synth 8-3331] design MEM has unconnected port a_cpu[16]
+WARNING: [Synth 8-3331] design MEM has unconnected port a_cpu[15]
+WARNING: [Synth 8-3331] design MEM has unconnected port a_cpu[14]
+WARNING: [Synth 8-3331] design MEM has unconnected port a_cpu[13]
+WARNING: [Synth 8-3331] design MEM has unconnected port a_cpu[12]
+WARNING: [Synth 8-3331] design MEM has unconnected port a_cpu[1]
+WARNING: [Synth 8-3331] design MEM has unconnected port a_cpu[0]
+WARNING: [Synth 8-3331] design MEM has unconnected port ra_ddu[31]
+WARNING: [Synth 8-3331] design MEM has unconnected port ra_ddu[30]
+WARNING: [Synth 8-3331] design MEM has unconnected port ra_ddu[29]
+WARNING: [Synth 8-3331] design MEM has unconnected port ra_ddu[28]
+WARNING: [Synth 8-3331] design MEM has unconnected port ra_ddu[27]
+WARNING: [Synth 8-3331] design MEM has unconnected port ra_ddu[26]
+WARNING: [Synth 8-3331] design MEM has unconnected port ra_ddu[25]
+WARNING: [Synth 8-3331] design MEM has unconnected port ra_ddu[24]
+WARNING: [Synth 8-3331] design MEM has unconnected port ra_ddu[23]
+WARNING: [Synth 8-3331] design MEM has unconnected port ra_ddu[22]
+WARNING: [Synth 8-3331] design MEM has unconnected port ra_ddu[21]
+WARNING: [Synth 8-3331] design MEM has unconnected port ra_ddu[20]
+WARNING: [Synth 8-3331] design MEM has unconnected port ra_ddu[19]
+WARNING: [Synth 8-3331] design MEM has unconnected port ra_ddu[18]
+WARNING: [Synth 8-3331] design MEM has unconnected port ra_ddu[17]
+WARNING: [Synth 8-3331] design MEM has unconnected port ra_ddu[16]
+WARNING: [Synth 8-3331] design MEM has unconnected port ra_ddu[15]
+WARNING: [Synth 8-3331] design MEM has unconnected port ra_ddu[14]
+WARNING: [Synth 8-3331] design MEM has unconnected port ra_ddu[13]
+WARNING: [Synth 8-3331] design MEM has unconnected port ra_ddu[12]
+WARNING: [Synth 8-3331] design MEM has unconnected port ra_ddu[1]
+WARNING: [Synth 8-3331] design MEM has unconnected port ra_ddu[0]
+WARNING: [Synth 8-3331] design DDU has unconnected port valid_frame
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 450.504 ; gain = 156.758
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 450.504 ; gain = 156.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 450.504 ; gain = 156.758
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'mo_clk_wiz_0'
+Finished Parsing XDC File [d:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'mo_clk_wiz_0'
+Parsing XDC File [d:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'mo_cpu_mem/mo_mem/mo_dist_mem'
+Finished Parsing XDC File [d:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'mo_cpu_mem/mo_mem/mo_dist_mem'
+Parsing XDC File [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/constrs_1/imports/Module/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/constrs_1/imports/Module/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/constrs_1/imports/Module/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 817.859 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 817.859 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 817.859 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 817.859 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 817.859 ; gain = 524.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 817.859 ; gain = 524.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  d:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  d:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property DONT_TOUCH = true for mo_clk_wiz_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mo_cpu_mem/mo_mem/mo_dist_mem. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 817.859 ; gain = 524.113
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'SEG'
+INFO: [Synth 8-5544] ROM "an" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "R_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'CauseWrite_reg' into 'EPCWrite_reg' [D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.srcs/sources_1/new/ControlUnit.v:120]
+INFO: [Synth 8-5546] ROM "nextstate" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "en_tx" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "R_TX_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R_TX_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "receiving" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "receiving" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                              000
+                 iSTATE0 |                              001 |                              001
+                 iSTATE1 |                              010 |                              010
+                 iSTATE2 |                              011 |                              011
+                 iSTATE3 |                              100 |                              100
+                 iSTATE4 |                              101 |                              101
+                 iSTATE5 |                              110 |                              110
+                 iSTATE6 |                              111 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'SEG'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 817.859 ; gain = 524.113
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 4     
+	   2 Input      1 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 41    
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 35    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   4 Input     32 Bit        Muxes := 5     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   8 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 8     
+	   2 Input      4 Bit        Muxes := 11    
+	   7 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	  16 Input      2 Bit        Muxes := 3     
+	   8 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 54    
+	  16 Input      1 Bit        Muxes := 18    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module CLK 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module CLK__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module CLK__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module SEG 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+Module MUL_SIN 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module DDU 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 8     
+	   2 Input      4 Bit        Muxes := 8     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Reg_File 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 32    
+Module ALUControlUnit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+Module ControlUnit 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   7 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 1     
+	  16 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+	  16 Input      1 Bit        Muxes := 18    
+Module CPU 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   4 Input     32 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 1     
+Module CPU_MEM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module HC_42 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 3     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "mo_control_unit/nextstate" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "p_2_out0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "R_TX_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R_TX_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design CPU_MEM has unconnected port addr_ddu[31]
+WARNING: [Synth 8-3331] design CPU_MEM has unconnected port addr_ddu[30]
+WARNING: [Synth 8-3331] design CPU_MEM has unconnected port addr_ddu[29]
+WARNING: [Synth 8-3331] design CPU_MEM has unconnected port addr_ddu[28]
+WARNING: [Synth 8-3331] design CPU_MEM has unconnected port addr_ddu[27]
+WARNING: [Synth 8-3331] design CPU_MEM has unconnected port addr_ddu[26]
+WARNING: [Synth 8-3331] design CPU_MEM has unconnected port addr_ddu[25]
+WARNING: [Synth 8-3331] design CPU_MEM has unconnected port addr_ddu[24]
+WARNING: [Synth 8-3331] design CPU_MEM has unconnected port addr_ddu[23]
+WARNING: [Synth 8-3331] design CPU_MEM has unconnected port addr_ddu[22]
+WARNING: [Synth 8-3331] design CPU_MEM has unconnected port addr_ddu[21]
+WARNING: [Synth 8-3331] design CPU_MEM has unconnected port addr_ddu[20]
+WARNING: [Synth 8-3331] design CPU_MEM has unconnected port addr_ddu[19]
+WARNING: [Synth 8-3331] design CPU_MEM has unconnected port addr_ddu[18]
+WARNING: [Synth 8-3331] design CPU_MEM has unconnected port addr_ddu[17]
+WARNING: [Synth 8-3331] design CPU_MEM has unconnected port addr_ddu[16]
+WARNING: [Synth 8-3331] design CPU_MEM has unconnected port addr_ddu[15]
+WARNING: [Synth 8-3331] design CPU_MEM has unconnected port addr_ddu[14]
+WARNING: [Synth 8-3331] design CPU_MEM has unconnected port addr_ddu[13]
+WARNING: [Synth 8-3331] design CPU_MEM has unconnected port addr_ddu[12]
+WARNING: [Synth 8-3331] design CPU_MEM has unconnected port addr_ddu[1]
+WARNING: [Synth 8-3331] design CPU_MEM has unconnected port addr_ddu[0]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mo_hc_42/low0_inferred /\mo_hc_42/low_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mo_hc_42/low0_inferred /\mo_hc_42/low_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mo_hc_42/low0_inferred /\mo_hc_42/low_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mo_ddu/mo_seg/dp_reg )
+INFO: [Synth 8-3886] merging instance 'i_21/mo_ddu/mo_clk_4k/cnt_reg[29]' (FD) to 'i_21/mo_clk_2m/cnt_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_ddu/mo_clk_4k/cnt_reg[28]' (FD) to 'i_21/mo_clk_2m/cnt_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_ddu/mo_clk_4k/cnt_reg[24]' (FD) to 'i_21/mo_clk_2m/cnt_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_ddu/mo_clk_4k/cnt_reg[19]' (FD) to 'i_21/mo_clk_2m/cnt_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_ddu/mo_clk_4k/cnt_reg[20]' (FD) to 'i_21/mo_clk_2m/cnt_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_ddu/mo_clk_4k/cnt_reg[18]' (FD) to 'i_21/mo_clk_2m/cnt_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_ddu/mo_clk_4k/cnt_reg[26]' (FD) to 'i_21/mo_clk_2m/cnt_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_ddu/mo_clk_4k/cnt_reg[22]' (FD) to 'i_21/mo_clk_2m/cnt_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_ddu/mo_clk_4k/cnt_reg[25]' (FD) to 'i_21/mo_clk_2m/cnt_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_ddu/mo_clk_4k/cnt_reg[16]' (FD) to 'i_21/mo_clk_2m/cnt_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_ddu/mo_clk_4k/cnt_reg[23]' (FD) to 'i_21/mo_clk_2m/cnt_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_ddu/mo_clk_4k/cnt_reg[21]' (FD) to 'i_21/mo_clk_2m/cnt_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_ddu/mo_clk_4k/cnt_reg[17]' (FD) to 'i_21/mo_clk_2m/cnt_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_ddu/mo_clk_4k/cnt_reg[11]' (FD) to 'i_21/mo_clk_2m/cnt_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_ddu/mo_clk_4k/cnt_reg[14]' (FD) to 'i_21/mo_clk_2m/cnt_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_ddu/mo_clk_4k/cnt_reg[12]' (FD) to 'i_21/mo_clk_2m/cnt_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_ddu/mo_clk_4k/cnt_reg[27]' (FD) to 'i_21/mo_clk_2m/cnt_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_ddu/mo_clk_4k/cnt_reg[15]' (FD) to 'i_21/mo_clk_2m/cnt_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_ddu/mo_clk_4k/cnt_reg[13]' (FD) to 'i_21/mo_clk_2m/cnt_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_153600/cnt_reg[14]' (FD) to 'i_22/mo_clk_9600/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_153600/cnt_reg[11]' (FD) to 'i_22/mo_clk_9600/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_153600/cnt_reg[13]' (FD) to 'i_22/mo_clk_9600/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_153600/cnt_reg[12]' (FD) to 'i_22/mo_clk_9600/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_153600/cnt_reg[21]' (FD) to 'i_22/mo_clk_9600/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_153600/cnt_reg[18]' (FD) to 'i_22/mo_clk_9600/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_153600/cnt_reg[20]' (FD) to 'i_22/mo_clk_9600/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_153600/cnt_reg[19]' (FD) to 'i_22/mo_clk_9600/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_153600/cnt_reg[29]' (FD) to 'i_22/mo_clk_9600/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_153600/cnt_reg[26]' (FD) to 'i_22/mo_clk_9600/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_153600/cnt_reg[28]' (FD) to 'i_22/mo_clk_9600/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_153600/cnt_reg[27]' (FD) to 'i_22/mo_clk_9600/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_153600/cnt_reg[10]' (FD) to 'i_22/mo_clk_9600/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_153600/cnt_reg[7]' (FD) to 'i_22/mo_clk_9600/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_153600/cnt_reg[9]' (FD) to 'i_22/mo_clk_9600/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_153600/cnt_reg[8]' (FD) to 'i_22/mo_clk_9600/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_153600/cnt_reg[17]' (FD) to 'i_22/mo_clk_9600/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_153600/cnt_reg[16]' (FD) to 'i_22/mo_clk_9600/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_153600/cnt_reg[15]' (FD) to 'i_22/mo_clk_9600/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_153600/cnt_reg[25]' (FD) to 'i_22/mo_clk_9600/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_153600/cnt_reg[22]' (FD) to 'i_22/mo_clk_9600/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_153600/cnt_reg[24]' (FD) to 'i_22/mo_clk_9600/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_153600/cnt_reg[23]' (FD) to 'i_22/mo_clk_9600/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_clk_2m/cnt_reg[21]' (FD) to 'i_21/mo_clk_2m/cnt_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_clk_2m/cnt_reg[18]' (FD) to 'i_21/mo_clk_2m/cnt_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_clk_2m/cnt_reg[8]' (FD) to 'i_21/mo_clk_2m/cnt_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_clk_2m/cnt_reg[2]' (FD) to 'i_21/mo_clk_2m/cnt_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_clk_2m/cnt_reg[15]' (FD) to 'i_21/mo_clk_2m/cnt_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_clk_2m/cnt_reg[3]' (FD) to 'i_21/mo_clk_2m/cnt_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_clk_2m/cnt_reg[13]' (FD) to 'i_21/mo_clk_2m/cnt_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_clk_2m/cnt_reg[4]' (FD) to 'i_21/mo_clk_2m/cnt_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_clk_2m/cnt_reg[12]' (FD) to 'i_21/mo_clk_2m/cnt_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_clk_2m/cnt_reg[5]' (FD) to 'i_21/mo_clk_2m/cnt_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_clk_2m/cnt_reg[9]' (FD) to 'i_21/mo_clk_2m/cnt_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_clk_2m/cnt_reg[7]' (FD) to 'i_21/mo_clk_2m/cnt_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_clk_2m/cnt_reg[22]' (FD) to 'i_21/mo_clk_2m/cnt_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_clk_2m/cnt_reg[10]' (FD) to 'i_21/mo_clk_2m/cnt_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_clk_2m/cnt_reg[27]' (FD) to 'i_21/mo_clk_2m/cnt_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_clk_2m/cnt_reg[17]' (FD) to 'i_21/mo_clk_2m/cnt_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_clk_2m/cnt_reg[24]' (FD) to 'i_21/mo_clk_2m/cnt_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_clk_2m/cnt_reg[20]' (FD) to 'i_21/mo_clk_2m/cnt_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_clk_2m/cnt_reg[19]' (FD) to 'i_21/mo_clk_2m/cnt_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_clk_2m/cnt_reg[6]' (FD) to 'i_21/mo_clk_2m/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_clk_2m/cnt_reg[29]' (FD) to 'i_21/mo_clk_2m/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_clk_2m/cnt_reg[16]' (FD) to 'i_21/mo_clk_2m/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_clk_2m/cnt_reg[25]' (FD) to 'i_21/mo_clk_2m/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_clk_2m/cnt_reg[28]' (FD) to 'i_21/mo_clk_2m/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_clk_2m/cnt_reg[14]' (FD) to 'i_21/mo_clk_2m/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_clk_2m/cnt_reg[11]' (FD) to 'i_21/mo_clk_2m/cnt_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_21/mo_clk_2m/cnt_reg[26]' (FD) to 'i_21/mo_clk_2m/cnt_reg[23]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\mo_clk_2m/cnt_reg[23] )
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_9600/cnt_reg[29]' (FD) to 'i_22/mo_clk_9600/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_9600/cnt_reg[28]' (FD) to 'i_22/mo_clk_9600/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_9600/cnt_reg[24]' (FD) to 'i_22/mo_clk_9600/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_9600/cnt_reg[19]' (FD) to 'i_22/mo_clk_9600/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_9600/cnt_reg[20]' (FD) to 'i_22/mo_clk_9600/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_9600/cnt_reg[18]' (FD) to 'i_22/mo_clk_9600/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_9600/cnt_reg[26]' (FD) to 'i_22/mo_clk_9600/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_9600/cnt_reg[22]' (FD) to 'i_22/mo_clk_9600/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_9600/cnt_reg[25]' (FD) to 'i_22/mo_clk_9600/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_9600/cnt_reg[16]' (FD) to 'i_22/mo_clk_9600/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_9600/cnt_reg[23]' (FD) to 'i_22/mo_clk_9600/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_9600/cnt_reg[21]' (FD) to 'i_22/mo_clk_9600/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_9600/cnt_reg[17]' (FD) to 'i_22/mo_clk_9600/cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_9600/cnt_reg[11]' (FD) to 'i_22/mo_clk_9600/cnt_reg[12]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_9600/cnt_reg[14]' (FD) to 'i_22/mo_clk_9600/cnt_reg[12]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_9600/cnt_reg[12]' (FD) to 'i_22/mo_clk_9600/cnt_reg[13]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_9600/cnt_reg[27]' (FD) to 'i_22/mo_clk_9600/cnt_reg[13]'
+INFO: [Synth 8-3886] merging instance 'i_22/mo_clk_9600/cnt_reg[15]' (FD) to 'i_22/mo_clk_9600/cnt_reg[13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_22/\mo_clk_9600/cnt_reg[13] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 817.859 ; gain = 524.113
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mo_clk_wiz_0/clk_out1' to pin 'mo_clk_wiz_0/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mo_clk_wiz_0/clk_out2' to pin 'mo_clk_wiz_0/bbstub_clk_out2/O'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 817.859 ; gain = 524.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 827.660 ; gain = 533.914
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'mo_hc_42/n_reg[7]' (FDE) to 'mo_hc_42/frame_reg[7]'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 861.230 ; gain = 567.484
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 861.230 ; gain = 567.484
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 861.230 ; gain = 567.484
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 861.230 ; gain = 567.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 861.230 ; gain = 567.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 861.230 ; gain = 567.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 861.230 ; gain = 567.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |clk_wiz_0      |         1|
+|2     |dist_mem_gen_0 |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |clk_wiz_0      |     1|
+|2     |dist_mem_gen_0 |     1|
+|3     |BUFG           |     2|
+|4     |CARRY4         |    33|
+|5     |LUT1           |     6|
+|6     |LUT2           |    60|
+|7     |LUT3           |   271|
+|8     |LUT4           |   186|
+|9     |LUT5           |   157|
+|10    |LUT6           |  1302|
+|11    |MUXF7          |   394|
+|12    |MUXF8          |    20|
+|13    |FDCE           |   107|
+|14    |FDPE           |     7|
+|15    |FDRE           |  1405|
+|16    |FDSE           |    11|
+|17    |LDC            |     2|
+|18    |IBUF           |     9|
+|19    |OBUF           |    36|
++------+---------------+------+
+
+Report Instance Areas: 
++------+----------------------+----------------------+------+
+|      |Instance              |Module                |Cells |
++------+----------------------+----------------------+------+
+|1     |top                   |                      |  4074|
+|2     |  mo_clk_153600       |CLK__parameterized1   |    19|
+|3     |  mo_clk_2m           |CLK                   |     6|
+|4     |  mo_clk_9600         |CLK__parameterized0   |    28|
+|5     |  mo_cpu_mem          |CPU_MEM               |  3794|
+|6     |    mo_cpu            |CPU                   |  3402|
+|7     |      mo_alu          |ALU                   |    16|
+|8     |      mo_control_unit |ControlUnit           |   859|
+|9     |      mo_reg_file     |Reg_File              |  2288|
+|10    |    mo_mem            |MEM                   |   171|
+|11    |  mo_ddu              |DDU                   |    93|
+|12    |    mo_clk_4k         |CLK__parameterized0_0 |    28|
+|13    |    mo_mul_sin_dec    |MUL_SIN               |     3|
+|14    |    mo_mul_sin_inc    |MUL_SIN_1             |    16|
+|15    |    mo_mul_sin_step   |MUL_SIN_2             |     3|
+|16    |    mo_seg            |SEG                   |    29|
+|17    |  mo_hc_42            |HC_42                 |    85|
++------+----------------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 861.230 ; gain = 567.484
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 22 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 861.230 ; gain = 200.129
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 861.230 ; gain = 567.484
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 449 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 861.230 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  LDC => LDCE: 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+200 Infos, 111 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 861.230 ; gain = 578.957
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 861.230 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Dev/HardWare/MIPS_APP/project/cpu/cpu.runs/synth_1/Top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri May 31 17:57:24 2019...
